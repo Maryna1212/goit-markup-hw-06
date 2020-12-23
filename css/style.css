@@ -181,6 +181,20 @@ ul {
   letter-spacing: 0.06em;
 }
 
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  color: var(--text-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
 /* Section features */
 
 .features {
@@ -326,20 +340,6 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 32px;
-  background-color: var(--accent-color);
-  color: var(--text-white-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
 }
 
 /* Modal */
@@ -556,6 +556,56 @@ ul {
 .social-icon {
   width: 20px;
   height: 20px;
+}
+
+/* Footer Form */
+
+.footer-form {
+  margin-left: 93px;
+  width: 570px;
+  height: auto;
+}
+
+.form-mail {
+  margin-top: 20px;
+  margin-right: 0;
+  width: 358px;
+  height: 50px;
+}
+
+.form-mail input {
+  position: absolute;
+  width: 358px;
+  height: 50px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--c-dark-color);
+}
+
+.footer-button {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 12px;
+  width: 200px;
+  background-color: var(--accent-color);
+  color: var(--text-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Section Hero Portfolio */
