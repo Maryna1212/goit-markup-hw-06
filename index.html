@@ -54,28 +54,30 @@
         <button class="button" href="" data-modal-open>Заказать услугу</button>
         <div class="backdrop" data-modal>
           <div class="modal">
-            <p class="modal-feedback">Оставьте свои данные, мы вам перезвоним</p>
-            <div>
-              <label for="name">Имя</label>
-              <input type="text" name="name" id="name">
-            </div>
-            <div>
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel">
-            </div>
-            <div>
-              <label for="mail">Почта</label>
-              <input type="email" name="mail" id="mail">
-            </div>
-            <div>
-              <label for="comment">Комментарий</label>
-              <textarea name="comment" id="comment" cols="50" rows="6"></textarea>
-            </div>
-            <div>
-              <input type="checkbox" name="policy" id="policy">
-              <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-            </div>
-             <button type="submit">Отправить</button>
+            <form class="form">
+              <p class="form-feedback">Оставьте свои данные, мы вам перезвоним</p>
+              <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+             </div>
+             <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">
+             </div>
+             <div class="form-field">
+               <label for="mail">Почта</label>
+               <input type="email" name="mail" id="mail">
+             </div>
+             <div class="form-field">
+               <label for="comment">Комментарий</label>
+               <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+             </div>
+             <div class="form-policy">
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+             </div>
+               <button class="form-button" type="submit">Отправить</button>
+           </form>
             <button class="button-close" data-modal-close>
               <svg width="11" height="11">
                 <use href="./images/symbol-defs-1.svg#icon-vector-1"></use>
