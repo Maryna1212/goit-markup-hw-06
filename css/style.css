@@ -424,6 +424,7 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input input:focus {
@@ -440,6 +441,7 @@ ul {
   left: 15px;
   transform: translateY(-50%);
   fill: var(--form-icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus ~ .icon-form {
@@ -451,9 +453,11 @@ textarea {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-comment:focus-within {
+.comment:focus {
+  outline: none;
   border: 1px solid var(--accent-color);
 }
 
@@ -465,6 +469,9 @@ textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+
+.comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -513,6 +520,7 @@ textarea {
 .checkbox:checked + .policy-checkbox::before {
   background-color: var(--accent-color);
   background-image: url(../images/check.svg);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-button {
@@ -540,6 +548,7 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:hover,
